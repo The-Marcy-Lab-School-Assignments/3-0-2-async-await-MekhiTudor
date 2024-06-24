@@ -1,5 +1,6 @@
 export const fetchHandler = async (url, options = {}) => {
   try {
+    /** FEEDBACK: Great job getting all test cases to pass! */
     const fetchCall = await fetch(url, options);
     if (!fetchCall.ok) {
       throw new Error(
